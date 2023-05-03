@@ -40,21 +40,22 @@ const Navbar = () => {
       </header>
 
       <ul className=' hidden md:flex justify-center text-lg font-thin mt-[-30px] py-4 gap-16 w-full border-t-[1px] border-b-[1px]'>
-        <button>NEW</button>
-        <button>PRODUCTS</button>
-        <button>PERSONALIZE</button>
-        <button>INFORMATIONS</button>
+        <button className='hover:text-red-500 hover:scale-110 transition-all'>NEW</button>
+        <button className='hover:text-red-500 hover:scale-110 transition-all'>PRODUCTS</button>
+        <button className='hover:text-red-500 hover:scale-110 transition-all'>PERSONALIZE</button>
+        <button className='hover:text-red-500 hover:scale-110 transition-all'>INFORMATIONS</button>
       </ul>
 
       {!menu && (
         <nav className='fixed left-0 top-[0%] h-full w-[40%] bg-[#0C0C0C]  bg-opacity-0 z-0 md:hidden'>
           <ul className=' flex flex-col gap-8 px-4 sm:px-8 mt-24   '>
-            <li className='border-b py-2 w-full min-w-[140px]'>NEW</li>
-            <li className='border-b py-2 w-full min-w-[140px]'>PRODUCTS</li>
-            <li className='border-b py-2 w-full min-w-[140px]'>PERSONALIZE</li>
-            <li className='border-b py-2 w-full min-w-[140px]'> INFORMATIONS</li>
-            <div className='flex items-center lg:gap-4 '>
-              <input type='text' placeholder='search...' className='py-2 px-2 max-w-[130px] text-white rounded-3xl bg-[#0C0C0C] border-[1px] border-white focus:outline-none' />
+            <button className='border-b py-2 w-full min-w-[140px] hover:text-red-500 hover:scale-110 transition-all'>NEW</button>
+            <button className='border-b py-2 w-full min-w-[140px] hover:text-red-500 hover:scale-110 transition-all'>PRODUCTS</button>
+            <button className='border-b py-2 w-full min-w-[140px] hover:text-red-500 hover:scale-110 transition-all'>PERSONALIZE</button>
+            <button className='border-b py-2 w-full min-w-[140px] hover:text-red-500 hover:scale-110 transition-all'> INFORMATIONS</button>
+            <div className='flex items-center gap-2 sm:gap-4 '>
+              <input type='text' placeholder='search...' className='py-2 px-2 max-w-[80px] sm:max-w-[120px] text-white rounded-3xl bg-[#0C0C0C] border-[1px] border-white focus:outline-none' />
+              <AiOutlineSearch size={30} className='min-w-[25px]' />
             </div>
           </ul>
         </nav>
