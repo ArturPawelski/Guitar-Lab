@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='text-white font-quicksand  w-full '>
+    <div className='text-white font-quicksand w-full '>
       <header className='py-8 lg:px-20 md:px-4'>
         {menu ? (
           <GiHamburgerMenu
