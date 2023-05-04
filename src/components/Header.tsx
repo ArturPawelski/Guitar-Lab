@@ -19,7 +19,7 @@ const Header = () => {
       <h3 className='hidden  font-[400] lg:block md:text-3xl sm:absolute md:top-[800px] lg:left-[5%] xl:left-[12.5%] 2xl:left-[17%]    md:max-w-[300px]  lg:max-w-[400px]'>
         Whether you're a beginner or a seasoned pro, our selection of guitars has something for everyone.{' '}
       </h3>
-      <h4 className='hidden text-right font-[300] lg:block md:text-3xl sm:absolute md:top-[1050px] lg:top-[1400px]  lg:right-[4.5%] xl:right-[10.5%] 2xl:right-[16%]    md:max-w-[300px]  lg:max-w-[250px] xl:max-w-[300px]'>
+      <h4 className='hidden text-right font-[300] lg:block md:text-3xl sm:absolute  lg:top-[1350px]  lg:right-[4.5%] xl:right-[10.5%] 2xl:right-[16%]    md:max-w-[300px]  lg:max-w-[250px] xl:max-w-[300px]'>
         CHOOSE your guitar and go into the world!
       </h4>
       <h5 className='hidden  font-[400] lg:block md:text-3xl sm:absolute md:top-[1830px] lg:left-[5%] xl:left-[12.5%] 2xl:left-[17%]    md:max-w-[300px]  lg:max-w-[400px]'>
