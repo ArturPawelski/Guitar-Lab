@@ -39,7 +39,7 @@ const Navbar = () => {
         </nav>
       </header>
 
-      <ul className=' hidden md:flex justify-center text-lg font-thin mt-[-60px] py-4 gap-16 w-full border-t-[1px] border-b-[1px]'>
+      <ul className=' hidden md:flex justify-center text-lg font-thin mt-[-60px] py-4 gap-16 w-full border-t-[1px] border-b-[1px] md:fixed md:top-[60px] md:bg-black md:bg-opacity-70'>
         <button className='hover:text-red-500 hover:scale-110 transition-all'>NEW</button>
         <button className='hover:text-red-500 hover:scale-110 transition-all'>PRODUCTS</button>
         <button className='hover:text-red-500 hover:scale-110 transition-all'>PERSONALIZE</button>
