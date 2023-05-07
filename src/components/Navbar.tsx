@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AiOutlineSearch, AiOutlineShoppingCart, AiOutlineClose } from 'react-icons/ai';
 import { GiHamburgerMenu } from 'react-icons/gi';
 const Navbar = () => {
@@ -8,8 +8,28 @@ const Navbar = () => {
     setMenu(!menu);
   };
 
+  const [isNavFixed, setIsNavFixed] = useState<boolean>(false);
+
+  useEffect(() => {
+    function handleScroll(): void {
+      if (window.scrollY > 108) {
+        setIsNavFixed(true);
+      } else {
+        setIsNavFixed(false);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const navClass: string = `hidden md:flex justify-center text-lg font-thin mt-[-60px] py-4 gap-16 w-full border-t-[1px] border-b-[1px] ${isNavFixed ? 'md:fixed md:top-[60px] md:bg-black ' : ''}`;
+
   return (
-    <div className='text-white bg-[#0C0C0C] bg-opacity-80  font-quicksand w-full sticky md:relative top-0 z-50 '>
+    <div className='text-white bg-[#0C0C0C]   font-quicksand w-full sticky md:relative top-0 z-50 '>
       <header className='py-8 lg:px-20 md:px-4'>
         {menu ? (
           <GiHamburgerMenu
@@ -39,7 +59,7 @@ const Navbar = () => {
         </nav>
       </header>
 
-      <ul className=' hidden md:flex justify-center text-lg font-thin mt-[-60px] py-4 gap-16 w-full border-t-[1px] border-b-[1px] md:fixed md:top-[60px] md:bg-black md:bg-opacity-70'>
+      <ul className={navClass}>
         <button className='hover:text-red-500 hover:scale-110 transition-all'>NEW</button>
         <button className='hover:text-red-500 hover:scale-110 transition-all'>PRODUCTS</button>
         <button className='hover:text-red-500 hover:scale-110 transition-all'>PERSONALIZE</button>
@@ -47,7 +67,7 @@ const Navbar = () => {
       </ul>
 
       {!menu && (
-        <nav className='fixed left-0 top-[0%] h-full w-[40%] bg-[#0C0C0C]  bg-opacity-50 z-40 md:hidden'>
+        <nav className='fixed left-0 top-[0%] h-full w-[40%] bg-[#0C0C0C]  bg-opacity-80 z-40 md:hidden'>
           <ul className=' flex flex-col gap-8 px-4 sm:px-8 mt-24   '>
             <button className='border-b py-2 w-full min-w-[140px] hover:text-red-500 hover:scale-110 transition-all'>NEW</button>
             <button className='border-b py-2 w-full min-w-[140px] hover:text-red-500 hover:scale-110 transition-all'>PRODUCTS</button>
