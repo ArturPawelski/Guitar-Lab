@@ -4,13 +4,13 @@ import MainRedGuitar from './images/main-guitar-red.png';
 
 const Header = () => {
   return (
-    <main className='relative text-white font-quicksand w-full bg-footer-texture bg-cover bg-center min-h-[2200px] '>
-      <h1 className='hidden uppercase md:absolute md:block md:text-4xl md:font-bold  md:top-[0px] md:left-[3%] lg:left-[5%] xl:left-[12.5%] 2xl:left-[17%]   max-w-[420px]'>
+    <main className='relative text-white font-quicksand w-full bg-footer-texture bg-cover bg-center min-h-[2200px] px-2 '>
+      <h1 className='uppercase font-bold text-xl max-w-[400px] mx-auto text-center mt-8  sm:text-4xl sm:max-w-[500px] md:mt-16 lg:absolute lg:block lg:text-4xl lg:font-bold  lg:top-[0px]  lg:left-[5%] xl:left-[12.5%] 2xl:left-[17%]   lg:max-w-[420px]'>
         A new generation of guitars is coming...
       </h1>
 
-      <div className='flex mt-16 justify-center items-center min-h-screen'>
-        <img src={MainRedGuitar} alt='new guitar ' className='max-w-full max-h-full' />
+      <div className=' rotate-90   w-[33%] mt-[-25%]   mx-auto sm:mt-[-25%] md:mt-[-28%] lg:flex lg:justify-center lg:items-center  lg:w-full lg:min-h-screen lg:mt-16   lg:rotate-0'>
+        <img src={MainRedGuitar} alt='new guitar ' className=' max-w-full max-h-full' />
       </div>
 
       <h2 className='hidden text-right font-[300] lg:block md:text-3xl sm:absolute md:top-[400px]  lg:right-[5%] xl:right-[12.5%] 2xl:right-[17%]    md:max-w-[300px]  lg:max-w-[400px]'>
