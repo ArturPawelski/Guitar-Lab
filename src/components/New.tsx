@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { ForwardedRef, ReactComponentElement, useState } from 'react';
 import BlueGuitarImg from './images/new-model-blue.png';
 import GreenGuitarImg from './images/new-guitar-green.png';
 import VioletGuitarImg from './images/new-model-violet.png';
 
-const New = (props: any, ref: any) => {
+const New = (props: {}, ref: ForwardedRef<HTMLDivElement>) => {
   const [blueGuitar, setBlueGuiatr] = useState<boolean>(true);
   const [GreenGuitar, setGreenGuiatr] = useState<boolean>(false);
   const [VioletGuitar, setVioletGuiatr] = useState<boolean>(false);
