@@ -11,7 +11,7 @@ function App() {
   };
 
   return (
-    <div className='bg-[#0C0C0C] min-h-screen'>
+    <div className='bg-[#0C0C0C] min-h-screen '>
       <Navbar onNewCLick={handleNewClick} />
       <Header />
       <New ref={newRef} />

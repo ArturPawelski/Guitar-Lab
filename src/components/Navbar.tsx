@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { AiOutlineSearch, AiOutlineShoppingCart, AiOutlineClose } from 'react-icons/ai';
 import { GiHamburgerMenu } from 'react-icons/gi';
+
 const Navbar = ({ onNewCLick }: any) => {
   const [menu, setMenu] = useState<boolean>(true);
 
@@ -69,7 +70,7 @@ const Navbar = ({ onNewCLick }: any) => {
       </ul>
 
       {!menu && (
-        <nav className='fixed left-0 top-[0%] h-full w-[40%] bg-[#0C0C0C]  bg-opacity-80 z-40 md:hidden'>
+        <nav className='fixed left-0 top-[0%] h-full w-[60%] bg-[#0C0C0C]  bg-opacity-80 z-40 md:hidden'>
           <ul className=' flex flex-col gap-8 px-4 sm:px-8 mt-24   '>
             <button onClick={onNewCLick} className='border-b py-2 w-full min-w-[140px] hover:text-red-500 hover:scale-110 transition-all'>
               NEW
