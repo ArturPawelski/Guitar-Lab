@@ -27,7 +27,7 @@ const New = (props: {}, ref: ForwardedRef<HTMLDivElement>) => {
   };
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className='pb-4'>
       {blueGuitar && (
         <main className='  bg-gradient-to-b   from-[#094349] from-5% to-[#0C0C0C]] to-80% text-white font-quicksand w-full px-3 border-t-[1px] pb-16'>
           <h1 className='uppercase font-bold text-4xl text-center mt-24'>the newest model</h1>

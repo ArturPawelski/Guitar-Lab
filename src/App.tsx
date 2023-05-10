@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import New from './components/New';
+import Products from './components/Products';
 
 function App() {
   const newRef = useRef<HTMLDivElement>(null);
@@ -15,6 +16,7 @@ function App() {
       <Navbar onNewClick={handleNewClick} />
       <Header />
       <New ref={newRef} />
+      <Products />
     </div>
   );
 }
