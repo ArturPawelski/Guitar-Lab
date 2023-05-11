@@ -13,8 +13,8 @@ const Personalize = () => {
           </p>
           <button className='bg-white bg-opacity-40 font-bold py-2 px-8 rounded-2xl mt-12  mx-auto block md:mx-0 lg:mt-20 '>CONTACT</button>
         </section>
-        <section className='mx-auto'>
-          <img src={GuitarPhoto} alt='' className='md:w-full md:h-full md:mx-auto md:relative md:bottom-[20px] lg:bottom-[50px] xl:bottom-[80px] 2xl:bottom-[120px]' />
+        <section className='max-w-[30%] mx-auto md:w-auto md:mx-auto md:relative'>
+          <img src={GuitarPhoto} alt='' className=' rotate-90 mx-auto md:rotate-0 md:w-full md:h-full md:mx-auto md:relative md:bottom-[30px] ' />
         </section>
       </div>
     </main>
