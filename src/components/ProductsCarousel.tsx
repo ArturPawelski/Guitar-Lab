@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -6,7 +6,6 @@ import AcusticGuitar from './images/acoustic-guitar-product.png';
 import BasessGuitar from './images/basess-guitar-product.png';
 import ElectricGuitar from './images/electric-guitar-product.png';
 import HollowGuitar from './images/hollow-bodies-guitar-products.png';
-import { BsChevronCompactRight, BsChevronCompactLeft } from 'react-icons/bs';
 
 interface Slide {
   url: string;
@@ -64,7 +63,7 @@ const ProductsCarousel = () => {
   };
   return (
     <div>
-      <section className='mt-36 max-w-[80%] mx-auto  '>
+      <section className='mt-36 max-w-[80%] mx-auto mb-36 '>
         <h1 className='uppercase my-36 text-4xl font-bold '>Products</h1>
         <Slider {...settings}>
           {slides.map((slide, index) => (

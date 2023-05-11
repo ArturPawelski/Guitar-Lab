@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import ProductsCarousel from './ProductsCarousel';
 
 const Products = () => {
   return (
-    <div className=' text-white font-quicksand px-3 border-t-[1px] bg-[#0C0C0C] min-h-[1000px] '>
+    <div className=' text-white font-quicksand px-3 border-t-[1px] bg-[#0C0C0C]  '>
       <ProductsCarousel />
     </div>
   );
