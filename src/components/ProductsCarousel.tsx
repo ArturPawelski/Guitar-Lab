@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -7,7 +7,6 @@ import BasessGuitar from './images/basess-guitar-product.png';
 import ElectricGuitar from './images/electric-guitar-product.png';
 import HollowGuitar from './images/hollow-bodies-guitar-products.png';
 import { BsChevronCompactRight, BsChevronCompactLeft } from 'react-icons/bs';
-import { RxDotFilled } from 'react-icons/rx';
 
 interface Slide {
   url: string;
@@ -22,13 +21,20 @@ const ProductsCarousel = () => {
     { url: HollowGuitar, text: 'hollow bodies' },
   ];
 
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
+    centerMode: true,
+    appendDots: (dots: any) => (
+      <div>
+        <ul className='text-red-500 flex justify-center bg-white bg-opacity-70 py-1 rounded-full shadow-2xl  max-w-[130px] mx-auto'> {dots} </ul>
+      </div>
+    ),
+
     responsive: [
       {
         breakpoint: 1024,
@@ -59,13 +65,12 @@ const ProductsCarousel = () => {
   return (
     <div>
       <section className='mt-36 max-w-[80%] mx-auto  '>
+        <h1 className='uppercase my-36 text-4xl font-bold '>Products</h1>
         <Slider {...settings}>
           {slides.map((slide, index) => (
-            <div>
-              <div>
-                <img src={slide.url} alt={slide.text} className='mx-auto' />
-                <h2 className='text-center uppercase mt-4'>{slide.text}</h2>
-              </div>
+            <div key={index}>
+              <img src={slide.url} alt={slide.text} className='mx-auto' />
+              <h2 className='text-center uppercase mt-4 mb-8'>{slide.text}</h2>
             </div>
           ))}
         </Slider>
