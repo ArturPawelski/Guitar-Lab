@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import New from './components/New';
+import Personalize from './components/Personalize';
 import Products from './components/Products';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Header />
       <New ref={newRef} />
       <Products />
+      <Personalize />
     </div>
   );
 }
