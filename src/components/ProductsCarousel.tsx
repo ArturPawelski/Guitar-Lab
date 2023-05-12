@@ -63,8 +63,8 @@ const ProductsCarousel = () => {
   };
   return (
     <div>
-      <section className='mt-36 max-w-[80%] mx-auto mb-36 '>
-        <h1 className='uppercase my-36 text-4xl font-bold '>Products</h1>
+      <section className='my-24 max-w-[80%] mx-auto  '>
+        <h1 className='uppercase my-24 text-4xl font-bold '>Products</h1>
         <Slider {...settings}>
           {slides.map((slide, index) => (
             <div key={index}>

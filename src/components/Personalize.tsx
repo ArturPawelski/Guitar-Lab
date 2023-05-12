@@ -2,7 +2,7 @@ import React from 'react';
 import GuitarPhoto from './images/guitar-personalize.png';
 const Personalize = () => {
   return (
-    <main className='text-white font-quicksand px-3  bg-[#0C0C0C] py-24 '>
+    <main className='text-white font-quicksand px-3  bg-[#0C0C0C] py-8 md:py-24 '>
       <div className='max-w-[95%] mx-auto sm:max-w-[85%] md:max-w-[80%] md:flex  md:max-h-[600px]'>
         <section>
           <h1 className='uppercase text-4xl font-bold text-center md:text-left  '>personalize</h1>
