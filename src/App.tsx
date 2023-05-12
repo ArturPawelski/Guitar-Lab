@@ -4,6 +4,7 @@ import Header from './components/Header';
 import New from './components/New';
 import Personalize from './components/Personalize';
 import Products from './components/Products';
+import Informations from './components/Informations';
 
 function App() {
   const newRef = useRef<HTMLDivElement>(null);
@@ -19,6 +20,7 @@ function App() {
       <New ref={newRef} />
       <Products />
       <Personalize />
+      <Informations />
     </div>
   );
 }
