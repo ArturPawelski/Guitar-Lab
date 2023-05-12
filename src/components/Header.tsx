@@ -4,7 +4,7 @@ import MainRedGuitar from './images/main-guitar-red.png';
 
 const Header = () => {
   return (
-    <main className='relative min-h-[1050px] text-white font-quicksand w-full bg-footer-texture bg-cover bg-center px-2 lg:min-h-[2200px] '>
+    <main className='relative min-h-[900px] pb-12 text-white font-quicksand w-full bg-footer-texture bg-cover bg-center px-2 lg:min-h-[2200px] '>
       <h1 className='uppercase font-bold text-xl max-w-[400px] mx-auto text-center mt-16  sm:text-4xl sm:max-w-[500px] md:mt-16 lg:absolute lg:block lg:text-4xl lg:font-bold  lg:top-[0px]  lg:left-[5%] xl:left-[12.5%] 2xl:left-[17%]   lg:max-w-[420px]'>
         A new generation of guitars is coming...
       </h1>
