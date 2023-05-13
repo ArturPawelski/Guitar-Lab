@@ -7,7 +7,8 @@ const New = (props: {}, ref: ForwardedRef<HTMLDivElement>) => {
   const [blueGuitar, setBlueGuiatr] = useState<boolean>(true);
   const [GreenGuitar, setGreenGuiatr] = useState<boolean>(false);
   const [VioletGuitar, setVioletGuiatr] = useState<boolean>(false);
-
+  // usecallback
+  //change toggle on class
   const chooseBlueGuitar = (): void => {
     setBlueGuiatr(true);
     setGreenGuiatr(false);
@@ -29,7 +30,7 @@ const New = (props: {}, ref: ForwardedRef<HTMLDivElement>) => {
   return (
     <div ref={ref} className='pb-4'>
       {blueGuitar && (
-        <main className='  bg-gradient-to-b   from-[#094349] from-5% to-[#0C0C0C]] to-80% text-white font-quicksand w-full px-3 border-t-[1px] pb-16'>
+        <main className='bg-gradient-to-b  from-[#094349] from-5% to-[#0C0C0C]] to-80% text-white font-quicksand w-full px-3 border-t-[1px] pb-16'>
           <h1 className='uppercase font-bold text-4xl text-center mt-24'>the newest model</h1>
           <p className='font-[300] text-center mt-8 max-w-[750px] mx-auto'>
             Our newest guitar model offers a stylish design and exceptional sound quality. Perfect for players of all levels, it's a versatile and reliable instrument that will elevate your playing
