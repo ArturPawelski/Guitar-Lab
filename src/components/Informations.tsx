@@ -12,7 +12,7 @@ const Informations = () => {
       </div>
       <section className='max-w-[80%] mx-auto mt-16 gap-12 grid grid-cols-2 place-items-center md:grid-cols-4   '>
         <div className='grid place-items-center gap-4'>
-          <div className='bg-[#0C0C0C] shadow-[inset_0px_3px_4px_rgba(0,0,0,0.1)] shadow-[#8e8e8e] p-3 w-[120px] h-[120px] rounded-full '>
+          <div className='bg-[red] shadow-[inset_0px_3px_4px_rgba(0,0,0,0.1)] shadow-[#8e8e8e] p-3 w-[120px] h-[120px] rounded-full '>
             <img src={Icon1} alt='' className='w-full h-full' />
           </div>
           <h2>CONTACT</h2>

@@ -6,6 +6,7 @@ import Personalize from './components/Personalize';
 import Products from './components/Products';
 import Informations from './components/Informations';
 import SignUp from './components/SignUp';
+import Footer from './components/Footer';
 
 function App() {
   const newRef = useRef<HTMLDivElement>(null);
@@ -23,6 +24,7 @@ function App() {
       <Personalize />
       <Informations />
       <SignUp />
+      <Footer />
     </div>
   );
 }
