@@ -16,12 +16,12 @@ const Header = () => {
     };
   }, []);
   return (
-    <main className='relative min-h-[900px] pb-12 text-white font-quicksand w-full bg-footer-texture bg-cover bg-center px-2 lg:min-h-[2200px] '>
+    <main className=' relative min-h-[900px] pb-12 text-white font-quicksand w-full bg-footer-texture bg-cover bg-center px-2 lg:min-h-[2200px]   '>
       <motion.h1
         initial={isMobile ? { opacity: 0 } : { opacity: 0 }}
         animate={isMobile ? { opacity: 1 } : { opacity: 1 }}
         transition={isMobile ? { delay: 0.4, duration: 1 } : { delay: 0.2, duration: 1 }}
-        className='uppercase font-bold text-xl max-w-[400px] mx-auto text-center mt-16  sm:text-4xl sm:max-w-[500px] md:mt-16 lg:absolute lg:block lg:text-4xl lg:font-bold  lg:top-[0px]  lg:left-[5%] xl:left-[12.5%] 2xl:left-[17%]   lg:max-w-[420px]'
+        className='  uppercase font-bold text-xl max-w-[400px] mx-auto text-center mt-16  sm:text-4xl sm:max-w-[500px] md:mt-16 lg:absolute lg:block lg:text-4xl lg:font-bold  lg:top-[0px]  lg:left-[5%] xl:left-[12.5%] 2xl:left-[17%]   lg:max-w-[420px]'
       >
         A new generation of guitars is coming...
       </motion.h1>
@@ -47,7 +47,7 @@ const Header = () => {
         initial={isMobile ? { opacity: 0 } : { opacity: 0 }}
         whileInView={isMobile ? { opacity: 1 } : { opacity: 1 }}
         viewport={{ once: true }}
-        transition={isMobile ? { delay: 0.5, duration: 1 } : { duration: 1, delay: 1.1 }}
+        transition={isMobile ? { delay: 0.2, duration: 1 } : { duration: 1, delay: 1.1 }}
         className='text-xl font-[300] text-center max-w-[400px]  mx-auto mt-20 sm:text-2xl sm:max-w-[600px] lg:mt-0 lg:block lg:text-3xl lg:max-w-[400px] lg:absolute lg:top-[800px] lg:left-[5%] xl:left-[12.5%] 2xl:left-[17%]   '
       >
         Whether you're a beginner or a seasoned pro, our selection of guitars has something for everyone.{' '}
@@ -56,8 +56,8 @@ const Header = () => {
         initial={isMobile ? { opacity: 0 } : { opacity: 0 }}
         whileInView={isMobile ? { opacity: 1 } : { opacity: 1 }}
         viewport={{ once: true }}
-        transition={isMobile ? { delay: 0.5, duration: 1 } : { duration: 1, delay: 1.4 }}
-        className='text-xl font-[700] text-center max-w-[400px]  mx-auto mt-20 sm:text-2xl sm:max-w-[600px]  lg:block lg:text-3xl lg:absolute lg:text-right lg:font-[300] lg:top-[1350px]  lg:right-[4%]  lg:max-w-[250px] xl:right-[9%]  xl:max-w-[300px] 2xl:right-[16%]'
+        transition={isMobile ? { delay: 0.2, duration: 1 } : { duration: 1, delay: 1.4 }}
+        className='  text-xl font-[700] text-center max-w-[400px]  mx-auto mt-20 sm:text-2xl sm:max-w-[600px]  lg:block lg:text-3xl lg:absolute lg:text-right lg:font-[300] lg:top-[1350px]  lg:right-[4%]  lg:max-w-[250px] xl:right-[9%]  xl:max-w-[300px] 2xl:right-[16%]'
       >
         CHOOSE your guitar and go into the world!
       </motion.h4>
@@ -65,8 +65,8 @@ const Header = () => {
         initial={isMobile ? { opacity: 0 } : { opacity: 0 }}
         whileInView={isMobile ? { opacity: 1 } : { opacity: 1 }}
         viewport={{ once: true }}
-        transition={isMobile ? { delay: 0.5, duration: 1 } : { duration: 1, delay: 1.7 }}
-        className='text-xl font-[300] text-center max-w-[400px]  mx-auto mt-20 sm:text-2xl sm:max-w-[600px] lg:font-[300] lg:block lg:text-3xl lg:absolute lg:top-[1830px] lg:left-[5%] lg:max-w-[400px] xl:left-[12.5%] 2xl:left-[17%] '
+        transition={isMobile ? { delay: 0.2, duration: 1 } : { duration: 1, delay: 1.7 }}
+        className='  text-xl font-[300] text-center max-w-[400px]  mx-auto mt-20 sm:text-2xl sm:max-w-[600px] lg:font-[300] lg:block lg:text-3xl lg:absolute lg:top-[1830px] lg:left-[5%] lg:max-w-[400px] xl:left-[12.5%] 2xl:left-[17%] '
       >
         PERSONALIZE your own guitar that will capture your heart and the hearts of others
       </motion.h5>
