@@ -7,7 +7,7 @@ import { BsTwitter } from 'react-icons/bs';
 
 const SignUp = () => {
   return (
-    <div className='text-white font-quicksand px-4 bg-[#0C0C0C] py-36'>
+    <div className='text-white font-quicksand px-4 bg-[#0C0C0C] py-24'>
       <h1 className='text-center text-3xl font-bold sm:text-4xl'>SIGN UP FOR MORE INFORMATION & GREAT OFFERS</h1>
       <button className='bg-white py-2 px-14 block mx-auto text-black font-bold rounded-xl mt-8'>SUBSCRIBE</button>
       <div className='flex gap-4 justify-center items-center mt-8 sm:gap-8'>
