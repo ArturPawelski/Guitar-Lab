@@ -2,6 +2,7 @@ import React, { ForwardedRef, useState } from 'react';
 import BlueGuitarImg from './images/new-model-blue.png';
 import GreenGuitarImg from './images/new-guitar-green.png';
 import VioletGuitarImg from './images/new-model-violet.png';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const New = (props: {}, ref: ForwardedRef<HTMLDivElement>) => {
   const [blueGuitar, setBlueGuiatr] = useState<boolean>(true);
@@ -28,9 +29,15 @@ const New = (props: {}, ref: ForwardedRef<HTMLDivElement>) => {
   };
 
   return (
-    <div ref={ref} className='pb-4'>
-      {blueGuitar && (
-        <main className='bg-gradient-to-b  from-[#094349] from-5% to-[#0C0C0C]] to-80% text-white font-quicksand w-full px-3 border-t-[1px] pb-16'>
+    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false }} transition={{ delay: 0.2, duration: 0.8 }} ref={ref} className='pb-4'>
+      <AnimatePresence mode='wait'>
+        <motion.main
+          initial={{ opacity: 0, display: blueGuitar ? 'block' : 'none' }}
+          animate={{ opacity: blueGuitar ? 1 : 0, display: blueGuitar ? 'block' : 'none' }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.8 }}
+          className={` bg-gradient-to-b  from-[#094349] from-5% to-[#0C0C0C]] to-80% text-white font-quicksand w-full px-3 border-t-[1px] pb-16`}
+        >
           <h1 className='uppercase font-bold text-4xl text-center mt-24'>the newest model</h1>
           <p className='font-[300] text-center mt-8 max-w-[750px] mx-auto'>
             Our newest guitar model offers a stylish design and exceptional sound quality. Perfect for players of all levels, it's a versatile and reliable instrument that will elevate your playing
@@ -47,11 +54,16 @@ const New = (props: {}, ref: ForwardedRef<HTMLDivElement>) => {
             </ul>
             <button className=' mx-auto block mt-8  bg-[#134548]  border-[1px] border-[#1D99A1] px-8 py-2 rounded-3xl lg:mt-0 lg:absolute lg:right-20 lg:top-0  '>more information</button>
           </section>
-        </main>
-      )}
-
-      {GreenGuitar && (
-        <main className='  bg-gradient-to-b   from-[#073926] from-5% to-[#0C0C0C]] to-80% text-white font-quicksand w-full px-3 border-t-[1px]  pb-16'>
+        </motion.main>
+      </AnimatePresence>
+      <AnimatePresence mode='wait'>
+        <motion.main
+          initial={{ opacity: 0, display: GreenGuitar ? 'block' : 'none' }}
+          animate={{ opacity: GreenGuitar ? 1 : 0, display: GreenGuitar ? 'block' : 'none' }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.8 }}
+          className={` bg-gradient-to-b   from-[#073926] from-5% to-[#0C0C0C]] to-80% text-white font-quicksand w-full px-3 border-t-[1px]  pb-16`}
+        >
           <h1 className='uppercase font-bold text-4xl text-center mt-24'>the newest model</h1>
           <p className='font-[300] text-center mt-8 max-w-[750px] mx-auto'>
             Our newest guitar model offers a stylish design and exceptional sound quality. Perfect for players of all levels, it's a versatile and reliable instrument that will elevate your playing
@@ -68,11 +80,17 @@ const New = (props: {}, ref: ForwardedRef<HTMLDivElement>) => {
             </ul>
             <button className=' mx-auto mt-8 block  bg-[#1f5139]  border-[1px] border-[#41b24a] px-8 py-2 rounded-3xl lg:mt-0 lg:absolute lg:right-20 lg:top-0 '>more information</button>
           </section>
-        </main>
-      )}
+        </motion.main>
+      </AnimatePresence>
 
-      {VioletGuitar && (
-        <main className='  bg-gradient-to-b   from-[#490b4b] from-5% to-[#0C0C0C]] to-80% text-white font-quicksand w-full px-3 border-t-[1px] pb-16'>
+      <AnimatePresence mode='wait'>
+        <motion.main
+          initial={{ opacity: 0, display: VioletGuitar ? 'block' : 'none' }}
+          animate={{ opacity: VioletGuitar ? 1 : 0, display: VioletGuitar ? 'block' : 'none' }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.8 }}
+          className={` bg-gradient-to-b   from-[#490b4b] from-5% to-[#0C0C0C]] to-80% text-white font-quicksand w-full px-3 border-t-[1px] pb-16`}
+        >
           <h1 className='uppercase font-bold text-4xl text-center mt-24'>the newest model</h1>
           <p className='font-[300] text-center mt-8 max-w-[750px] mx-auto'>
             Our newest guitar model offers a stylish design and exceptional sound quality. Perfect for players of all levels, it's a versatile and reliable instrument that will elevate your playing
@@ -89,9 +107,9 @@ const New = (props: {}, ref: ForwardedRef<HTMLDivElement>) => {
             </ul>
             <button className='mx-auto block mt-8 bg-[#4e1f3c]  border-[1px] border-[#953a9b] px-8 py-2 rounded-3xl lg:mt-0 lg:absolute lg:right-20 lg:top-0'>more information</button>
           </section>
-        </main>
-      )}
-    </div>
+        </motion.main>
+      </AnimatePresence>
+    </motion.div>
   );
 };
 
