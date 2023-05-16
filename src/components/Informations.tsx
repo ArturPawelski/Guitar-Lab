@@ -6,7 +6,7 @@ import Icon4 from './images/catalogs icon.png';
 
 const Informations = () => {
   return (
-    <div className='text-white font-quicksand px-3 pb-16 bg-[#0C0C0C] mt-[-2rem] md:mt-0  md:pb-20 '>
+    <div className='text-white font-quicksand px-3 pb-16 bg-[#0C0C0C] mt-[-2rem] md:mt-0  md:pb-20 ' id='informations'>
       <div className=' mx-auto max-w-[95%] sm:max-w-[85%] md:max-w-[80%]'>
         <h1 className='uppercase text-3xl sm:text-4xl font-bold text-center md:text-left  '>informations</h1>
       </div>

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import New from './components/New';
@@ -9,17 +9,11 @@ import SignUp from './components/SignUp';
 import Footer from './components/Footer';
 
 function App() {
-  const newRef = useRef<HTMLDivElement>(null);
-
-  const handleNewClick = (): void => {
-    newRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <div className='bg-[#0C0C0C] min-h-screen '>
-      <Navbar onNewClick={handleNewClick} />
+      <Navbar />
       <Header />
-      <New ref={newRef} />
+      <New />
       <Products />
       <Personalize />
       <Informations />

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { delay, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import MainRedGuitar from './images/main-guitar-red.png';
 
 const Header = () => {
