@@ -35,7 +35,7 @@ const New = (props: {}, ref: ForwardedRef<HTMLDivElement>) => {
           initial={{ opacity: 0, display: blueGuitar ? 'block' : 'none' }}
           animate={{ opacity: blueGuitar ? 1 : 0, display: blueGuitar ? 'block' : 'none' }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1 }}
           className={` bg-gradient-to-b  from-[#094349] from-5% to-[#0C0C0C]] to-80% text-white font-quicksand w-full px-3 border-t-[1px] pb-16`}
         >
           <h1 className='uppercase font-bold text-4xl text-center mt-24'>the newest model</h1>
@@ -61,7 +61,7 @@ const New = (props: {}, ref: ForwardedRef<HTMLDivElement>) => {
           initial={{ opacity: 0, display: GreenGuitar ? 'block' : 'none' }}
           animate={{ opacity: GreenGuitar ? 1 : 0, display: GreenGuitar ? 'block' : 'none' }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1 }}
           className={` bg-gradient-to-b   from-[#073926] from-5% to-[#0C0C0C]] to-80% text-white font-quicksand w-full px-3 border-t-[1px]  pb-16`}
         >
           <h1 className='uppercase font-bold text-4xl text-center mt-24'>the newest model</h1>
@@ -88,7 +88,7 @@ const New = (props: {}, ref: ForwardedRef<HTMLDivElement>) => {
           initial={{ opacity: 0, display: VioletGuitar ? 'block' : 'none' }}
           animate={{ opacity: VioletGuitar ? 1 : 0, display: VioletGuitar ? 'block' : 'none' }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1 }}
           className={` bg-gradient-to-b   from-[#490b4b] from-5% to-[#0C0C0C]] to-80% text-white font-quicksand w-full px-3 border-t-[1px] pb-16`}
         >
           <h1 className='uppercase font-bold text-4xl text-center mt-24'>the newest model</h1>
