@@ -1,16 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AiOutlineSearch, AiOutlineShoppingCart, AiOutlineClose } from 'react-icons/ai';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { motion, AnimatePresence } from 'framer-motion';
 
-interface NavbarProps {
-  onNewClick: () => void;
-}
-
-const Navbar: React.FC<NavbarProps> = ({ onNewClick }) => {
+const Navbar = () => {
   const [menu, setMenu] = useState<boolean>(true);
-
-  const menuRef = useRef<HTMLDivElement>(null);
 
   const toggleMenu = (): void => {
     setMenu(!menu);
@@ -32,19 +26,6 @@ const Navbar: React.FC<NavbarProps> = ({ onNewClick }) => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent): void {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setMenu(true);
-      }
-    }
-
-    window.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      window.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [menuRef]);
 
   const navClass: string = `hidden md:flex justify-center text-lg font-thin mt-[-60px] py-4 gap-16 w-full border-t-[1px] border-b-[1px] ${isNavFixed ? 'md:fixed md:top-[60px] md:bg-black ' : ''}`;
 
@@ -80,9 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNewClick }) => {
       </header>
 
       <ul className={navClass}>
-        <button onClick={onNewClick} className='hover:text-red-500 hover:scale-110 transition-all'>
-          NEW
-        </button>
+        <button className='hover:text-red-500 hover:scale-110 transition-all'>NEW</button>
         <button className='hover:text-red-500 hover:scale-110 transition-all'>PRODUCTS</button>
         <button className='hover:text-red-500 hover:scale-110 transition-all'>PERSONALIZE</button>
         <button className='hover:text-red-500 hover:scale-110 transition-all'>INFORMATIONS</button>
@@ -94,13 +73,10 @@ const Navbar: React.FC<NavbarProps> = ({ onNewClick }) => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -300 }}
             transition={{ duration: 0.5 }}
-            ref={menuRef}
             className='fixed left-0 top-[0%] h-full w-[60%] bg-[#0C0C0C]  bg-opacity-80 z-40 md:hidden'
           >
             <ul className=' flex flex-col gap-8 px-4 sm:px-8 mt-24   '>
-              <button onClick={onNewClick} className='border-b py-2 w-full min-w-[140px] hover:text-red-500 hover:scale-110 transition-all'>
-                NEW
-              </button>
+              <button className='border-b py-2 w-full min-w-[140px] hover:text-red-500 hover:scale-110 transition-all'>NEW</button>
               <button className='border-b py-2 w-full min-w-[140px] hover:text-red-500 hover:scale-110 transition-all'>PRODUCTS</button>
               <button className='border-b py-2 w-full min-w-[140px] hover:text-red-500 hover:scale-110 transition-all'>PERSONALIZE</button>
               <button className='border-b py-2 w-full min-w-[140px] hover:text-red-500 hover:scale-110 transition-all'> INFORMATIONS</button>

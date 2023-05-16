@@ -1,10 +1,10 @@
-import React, { ForwardedRef, useState } from 'react';
+import React, { useState } from 'react';
 import BlueGuitarImg from './images/new-model-blue.png';
 import GreenGuitarImg from './images/new-guitar-green.png';
 import VioletGuitarImg from './images/new-model-violet.png';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const New = (props: {}, ref: ForwardedRef<HTMLDivElement>) => {
+const New = () => {
   const [blueGuitar, setBlueGuiatr] = useState<boolean>(true);
   const [GreenGuitar, setGreenGuiatr] = useState<boolean>(false);
   const [VioletGuitar, setVioletGuiatr] = useState<boolean>(false);
@@ -29,7 +29,7 @@ const New = (props: {}, ref: ForwardedRef<HTMLDivElement>) => {
   };
 
   return (
-    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false }} transition={{ delay: 0.2, duration: 0.8 }} ref={ref} className='pb-4'>
+    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false }} transition={{ delay: 0.2, duration: 0.8 }} className='pb-4'>
       <AnimatePresence mode='wait'>
         <motion.main
           initial={{ opacity: 0, display: blueGuitar ? 'block' : 'none' }}
@@ -113,4 +113,4 @@ const New = (props: {}, ref: ForwardedRef<HTMLDivElement>) => {
   );
 };
 
-export default React.forwardRef(New);
+export default New;
