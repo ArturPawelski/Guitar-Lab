@@ -4,7 +4,7 @@ import ProductsCarousel from './ProductsCarousel';
 
 const Products = () => {
   return (
-    <div className=' text-white font-quicksand px-3 border-t-[1px] bg-[#0C0C0C]  '>
+    <div className=' text-white font-quicksand px-3 border-t-[1px] bg-[#0C0C0C]  ' id='products'>
       <ProductsCarousel />
     </div>
   );
