@@ -48,9 +48,9 @@ const New = () => {
           </div>
           <section className='relative mt-[30%] lg:mt-0'>
             <ul className='flex gap-8 justify-center'>
-              <li onClick={chooseGreenGuitar} className='cursor-pointer w-8 h-8 bg-[#00A257] border-[1px] rounded-3xl'></li>
-              <li onClick={chooseVioletGuitar} className='cursor-pointer w-8 h-8 bg-[#76084C] border-[1px] rounded-3xl'></li>
-              <li onClick={chooseBlueGuitar} className='cursor-pointer w-8 h-8 bg-[#1D99A1] border-[1px] rounded-3xl'></li>
+              <li onClick={chooseGreenGuitar} className='cursor-pointer w-8 h-8 bg-[#00A257] border-[1px] rounded-3xl' tabIndex={0}></li>
+              <li onClick={chooseVioletGuitar} className='cursor-pointer w-8 h-8 bg-[#76084C] border-[1px] rounded-3xl' tabIndex={0}></li>
+              <li onClick={chooseBlueGuitar} className='cursor-pointer w-8 h-8 bg-[#1D99A1] border-[1px] rounded-3xl' tabIndex={0}></li>
             </ul>
             <button className=' mx-auto block mt-8  bg-[#134548]  border-[1px] border-[#1D99A1] px-8 py-2 rounded-3xl lg:mt-0 lg:absolute lg:right-20 lg:top-0  '>more information</button>
           </section>
@@ -74,9 +74,9 @@ const New = () => {
           </div>
           <section className='relative mt-[30%] lg:mt-0'>
             <ul className='flex gap-8 justify-center'>
-              <li onClick={chooseGreenGuitar} className='cursor-pointer w-8 h-8 bg-[#00A257] border-[1px] rounded-3xl'></li>
-              <li onClick={chooseVioletGuitar} className='cursor-pointer w-8 h-8 bg-[#76084C] border-[1px] rounded-3xl'></li>
-              <li onClick={chooseBlueGuitar} className='cursor-pointer w-8 h-8 bg-[#1D99A1] border-[1px] rounded-3xl'></li>
+              <li onClick={chooseGreenGuitar} className='cursor-pointer w-8 h-8 bg-[#00A257] border-[1px] rounded-3xl' tabIndex={0}></li>
+              <li onClick={chooseVioletGuitar} className='cursor-pointer w-8 h-8 bg-[#76084C] border-[1px] rounded-3xl' tabIndex={0}></li>
+              <li onClick={chooseBlueGuitar} className='cursor-pointer w-8 h-8 bg-[#1D99A1] border-[1px] rounded-3xl' tabIndex={0}></li>
             </ul>
             <button className=' mx-auto mt-8 block  bg-[#1f5139]  border-[1px] border-[#41b24a] px-8 py-2 rounded-3xl lg:mt-0 lg:absolute lg:right-20 lg:top-0 '>more information</button>
           </section>
@@ -101,9 +101,11 @@ const New = () => {
           </div>
           <section className='relative mt-[30%] lg:mt-0'>
             <ul className='flex gap-8 justify-center'>
-              <li onClick={chooseGreenGuitar} className='cursor-pointer w-8 h-8 bg-[#00A257] border-[1px] rounded-3xl'></li>
-              <li onClick={chooseVioletGuitar} className='cursor-pointer w-8 h-8 bg-[#76084C] border-[1px] rounded-3xl'></li>
-              <li onClick={chooseBlueGuitar} className='cursor-pointer w-8 h-8 bg-[#1D99A1] border-[1px] rounded-3xl'></li>
+              <li onClick={chooseGreenGuitar} className='cursor-pointer w-8 h-8 bg-[#00A257] border-[1px] rounded-3xl' tabIndex={0}></li>
+              <li onClick={chooseVioletGuitar} className='cursor-pointer w-8 h-8 bg-[#76084C] border-[1px] rounded-3xl' tabIndex={0}></li>
+              <li onClick={chooseBlueGuitar} className='cursor-pointer w-8 h-8 bg-[#1D99A1] border-[1px] rounded-3xl' tabIndex={0}>
+                {' '}
+              </li>
             </ul>
             <button className='mx-auto block mt-8 bg-[#4e1f3c]  border-[1px] border-[#953a9b] px-8 py-2 rounded-3xl lg:mt-0 lg:absolute lg:right-20 lg:top-0'>more information</button>
           </section>

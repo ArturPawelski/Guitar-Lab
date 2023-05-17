@@ -8,7 +8,9 @@ const Navbar = () => {
   const [menu, setMenu] = useState<boolean>(true);
   const [isNavFixed, setIsNavFixed] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement>(null);
-  const navClass: string = `hidden md:flex justify-center text-lg font-thin mt-[-60px] py-4 gap-16 w-full border-t-[1px] border-b-[1px] ${isNavFixed ? 'md:fixed md:top-[60px] md:bg-black ' : ''}`;
+  const navClass: string = `hidden md:flex justify-center text-lg font-thin mt-[-60px] py-4 gap-12 w-full border-t-[1px] border-b-[1px] lg:gap-16 ${
+    isNavFixed ? 'md:fixed md:top-[60px] md:bg-black ' : ''
+  }`;
 
   const toggleMenu = (): void => {
     setMenu(!menu);
@@ -69,13 +71,18 @@ const Navbar = () => {
         <nav className=' hidden md:flex items-center justify-between relative md:bottom-12'>
           <div className='flex items-center lg:gap-4 '>
             <input type='text' placeholder='search...' className='py-2 px-2 text-white rounded-3xl bg-[#0C0C0C] border-[1px] border-white focus:outline-none' />
-            <AiOutlineSearch size={30} />
+            <AiOutlineSearch size={30} className='  cursor-pointer' tabIndex={0} />
           </div>
           <AiOutlineShoppingCart size={30} tabIndex={0} className=' cursor-pointer hover:scale-[1.1] transition duration-500  ' />
         </nav>
       </header>
 
       <ul className={navClass}>
+        <button className={`text-[0.8rem] font-bold hover:text-red-500 hover:scale-110 transition-all uppercase ${isNavFixed ? 'block' : 'hidden'} `}>
+          <Link to='header' spy={true} smooth={true} offset={-70} duration={700}>
+            GuitarLab
+          </Link>
+        </button>
         <button className='hover:text-red-500 hover:scale-110 transition-all'>
           <Link to='new' spy={true} smooth={true} offset={-70} duration={700}>
             NEW
@@ -131,7 +138,7 @@ const Navbar = () => {
               </button>
               <div className='flex items-center gap-2 sm:gap-4 '>
                 <input type='text' placeholder='search...' className='py-2 px-2 max-w-[80px] sm:max-w-[120px] text-white rounded-3xl bg-[#0C0C0C] border-[1px] border-white focus:outline-none' />
-                <AiOutlineSearch size={30} className='min-w-[25px]' />
+                <AiOutlineSearch size={30} className='min-w-[25px] cursor-pointer' tabIndex={0} />
               </div>
             </ul>
           </motion.nav>

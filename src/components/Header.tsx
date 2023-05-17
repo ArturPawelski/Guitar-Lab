@@ -29,7 +29,8 @@ const Header = () => {
 
       <motion.div
         initial={isMobile ? { opacity: 0, y: -400, rotate: 0 } : { opacity: 0, rotate: 90 }}
-        animate={isMobile ? { opacity: 1, y: 0, rotate: 0 } : { opacity: 1, rotate: 90 }}
+        whileInView={isMobile ? { opacity: 1, y: 0, rotate: 0 } : { opacity: 1, rotate: 90 }}
+        viewport={{ once: false }}
         transition={isMobile ? { duration: 1.5, delay: 0, rotate: { duration: 0 } } : { rotate: { duration: 0, delay: 0 }, opacity: { duration: 1, delay: 0.5 } }}
         className=' w-[33%] mt-[-25%]   mx-auto sm:mt-[-25%] md:mt-[-28%] lg:flex lg:justify-center lg:items-center  lg:w-full lg:min-h-screen lg:mt-16   lg:rotate-0'
       >

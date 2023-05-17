@@ -18,11 +18,11 @@ const SignUp = () => {
       <h1 className='text-center text-3xl font-bold sm:text-4xl'>SIGN UP FOR MORE INFORMATION & GREAT OFFERS</h1>
       <button className='bg-white py-2 px-14 block mx-auto text-black font-bold rounded-xl mt-8'>SUBSCRIBE</button>
       <div className='flex gap-4 justify-center items-center mt-8 sm:gap-8'>
-        <CgYoutube size={35} />
-        <AiOutlineFacebook size={30} />
-        <BsTiktok size={25} />
-        <BsInstagram size={25} />
-        <BsTwitter size={25} />
+        <CgYoutube size={35} className='cursor-pointer' tabIndex={0} />
+        <AiOutlineFacebook size={30} className='cursor-pointer' tabIndex={0} />
+        <BsTiktok size={25} className='cursor-pointer' tabIndex={0} />
+        <BsInstagram size={25} className='cursor-pointer' tabIndex={0} />
+        <BsTwitter size={25} className='cursor-pointer' tabIndex={0} />
       </div>
     </motion.div>
   );
