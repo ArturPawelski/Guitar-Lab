@@ -29,9 +29,9 @@ GuitarLab is a modern website that focuses on design and an intuitive user inter
 
 ## Screenshots 📸
 
-![img1](https://github.com/ArturPawelski/Guitar-Lab/assets/114683466/0d8275eb-5e55-462e-9965-7460be590586)
-![img2](https://github.com/ArturPawelski/Guitar-Lab/assets/114683466/50046fad-ff96-4016-ad83-145dfd108455)
-![img3](https://github.com/ArturPawelski/Guitar-Lab/assets/114683466/20305354-425c-4597-bd50-a2ecccd3e0dc)
+![img1](https://github.com/ArturPawelski/Guitar-Lab/assets/114683466/6aee683f-355a-43ac-831f-45308d861ab3)
+![img2](https://github.com/ArturPawelski/Guitar-Lab/assets/114683466/590ca5f2-e74d-4012-b22c-4cd5e128a3a0)
+![img3](https://github.com/ArturPawelski/Guitar-Lab/assets/114683466/41bbc897-9381-426c-9bc6-564e322eaa80)
 
 ## To do:
 
