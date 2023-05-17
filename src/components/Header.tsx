@@ -16,7 +16,7 @@ const Header = () => {
     };
   }, []);
   return (
-    <main className=' relative min-h-[900px] pb-12 text-white font-quicksand w-full bg-footer-texture bg-cover bg-center px-2 lg:min-h-[2200px]   '>
+    <main className='relative min-h-[900px] pb-12 text-white font-quicksand w-full bg-footer-texture bg-cover bg-center px-2 lg:min-h-[2200px] ' id='header'>
       <motion.h1
         initial={isMobile ? { opacity: 0 } : { opacity: 0 }}
         whileInView={isMobile ? { opacity: 1 } : { opacity: 1 }}
@@ -52,7 +52,7 @@ const Header = () => {
         transition={isMobile ? { delay: 0.2, duration: 1 } : { duration: 1, delay: 1.1 }}
         className='text-xl font-[300] text-center max-w-[400px]  mx-auto mt-20 sm:text-2xl sm:max-w-[600px] lg:mt-0 lg:block lg:text-3xl lg:max-w-[400px] lg:absolute lg:top-[800px] lg:left-[5%] xl:left-[12.5%] 2xl:left-[17%]   '
       >
-        Whether you're a beginner or a seasoned pro, our selection of guitars has something for everyone.{' '}
+        Whether you're a beginner or a seasoned pro, our selection of guitars has something for everyone.
       </motion.h3>
       <motion.h4
         initial={isMobile ? { opacity: 0 } : { opacity: 0 }}
@@ -67,7 +67,7 @@ const Header = () => {
         initial={isMobile ? { opacity: 0 } : { opacity: 0 }}
         whileInView={isMobile ? { opacity: 1 } : { opacity: 1 }}
         viewport={{ once: false }}
-        transition={isMobile ? { delay: 0.2, duration: 1 } : { duration: 1, delay: 1.7 }}
+        transition={isMobile ? { delay: 0.2, duration: 1 } : { duration: 1, delay: 0.5 }}
         className='  text-xl font-[300] text-center max-w-[400px]  mx-auto mt-20 sm:text-2xl sm:max-w-[600px] lg:font-[300] lg:block lg:text-3xl lg:absolute lg:top-[1830px] lg:left-[5%] lg:max-w-[400px] xl:left-[12.5%] 2xl:left-[17%] '
       >
         PERSONALIZE your own guitar that will capture your heart and the hearts of others

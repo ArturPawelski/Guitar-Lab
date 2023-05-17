@@ -59,7 +59,11 @@ const Navbar = () => {
           />
         )}
 
-        <h1 className=' font-bold text-3xl md:text-6xl text-center mx-auto  '>GuitarLab</h1>
+        <h1 tabIndex={0} className=' font-bold text-3xl md:text-6xl text-center mx-auto cursor-pointer  '>
+          <Link to='header' spy={true} smooth={true} offset={-70} duration={700}>
+            GuitarLab
+          </Link>
+        </h1>
         <AiOutlineShoppingCart className=' absolute right-4 top-[38px] md:hidden  cursor-pointer hover:scale-[1.1] transition duration-500 active:translate-y-4' size={25} />
 
         <nav className=' hidden md:flex items-center justify-between relative md:bottom-12'>
