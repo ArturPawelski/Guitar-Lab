@@ -19,7 +19,8 @@ const Header = () => {
     <main className=' relative min-h-[900px] pb-12 text-white font-quicksand w-full bg-footer-texture bg-cover bg-center px-2 lg:min-h-[2200px]   '>
       <motion.h1
         initial={isMobile ? { opacity: 0 } : { opacity: 0 }}
-        animate={isMobile ? { opacity: 1 } : { opacity: 1 }}
+        whileInView={isMobile ? { opacity: 1 } : { opacity: 1 }}
+        viewport={{ once: false }}
         transition={isMobile ? { delay: 0.4, duration: 1 } : { delay: 0.2, duration: 1 }}
         className='  uppercase font-bold text-xl max-w-[400px] mx-auto text-center mt-16  sm:text-4xl sm:max-w-[500px] md:mt-16 lg:absolute lg:block lg:text-4xl lg:font-bold  lg:top-[0px]  lg:left-[5%] xl:left-[12.5%] 2xl:left-[17%]   lg:max-w-[420px]'
       >
@@ -37,8 +38,9 @@ const Header = () => {
 
       <motion.h2
         initial={isMobile ? { opacity: 0 } : { opacity: 0 }}
-        animate={isMobile ? { opacity: 1 } : { opacity: 1 }}
-        transition={isMobile ? { delay: 0.8, duration: 1 } : { delay: 0.8, duration: 1 }}
+        whileInView={isMobile ? { opacity: 1 } : { opacity: 1 }}
+        viewport={{ once: false }}
+        transition={isMobile ? { delay: 1, duration: 1 } : { delay: 0.8, duration: 1 }}
         className='text-center text-xl mt-[-20%] mx-auto max-w-[400px] font-[500] sm:mt-[-25%]  sm:text-3xl   sm:max-w-[500px] md:mt-[-28%] md:top-[400px] lg:font-[300] lg:mt-0 lg:absolute lg:block lg:text-right lg:max-w-[400px] lg:right-[5%] xl:right-[12.5%] 2xl:right-[17%] '
       >
         Our store is proud to present some of the most innovative guitars on the market
@@ -46,7 +48,7 @@ const Header = () => {
       <motion.h3
         initial={isMobile ? { opacity: 0 } : { opacity: 0 }}
         whileInView={isMobile ? { opacity: 1 } : { opacity: 1 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         transition={isMobile ? { delay: 0.2, duration: 1 } : { duration: 1, delay: 1.1 }}
         className='text-xl font-[300] text-center max-w-[400px]  mx-auto mt-20 sm:text-2xl sm:max-w-[600px] lg:mt-0 lg:block lg:text-3xl lg:max-w-[400px] lg:absolute lg:top-[800px] lg:left-[5%] xl:left-[12.5%] 2xl:left-[17%]   '
       >
@@ -64,7 +66,7 @@ const Header = () => {
       <motion.h5
         initial={isMobile ? { opacity: 0 } : { opacity: 0 }}
         whileInView={isMobile ? { opacity: 1 } : { opacity: 1 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         transition={isMobile ? { delay: 0.2, duration: 1 } : { duration: 1, delay: 1.7 }}
         className='  text-xl font-[300] text-center max-w-[400px]  mx-auto mt-20 sm:text-2xl sm:max-w-[600px] lg:font-[300] lg:block lg:text-3xl lg:absolute lg:top-[1830px] lg:left-[5%] lg:max-w-[400px] xl:left-[12.5%] 2xl:left-[17%] '
       >
