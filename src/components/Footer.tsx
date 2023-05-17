@@ -24,12 +24,12 @@ const Footer = () => {
         <ul className='flex gap-4 justify-center mt-2 text-[0.7rem] items-center'>
           <li>E-mail: arturpawelski13@gmail.com</li>
           <li>
-            <a href='https://github.com/ArturPawelski' target='_blank'>
+            <a href='https://github.com/ArturPawelski' target='_blank' rel='noreferrer'>
               <AiFillGithub size={25} />
             </a>
           </li>
           <li>
-            <a href='https://www.linkedin.com/in/artur-pawelski-03a07b232/' target='_blank'>
+            <a href='https://www.linkedin.com/in/artur-pawelski-03a07b232/' target='_blank' rel='noreferrer'>
               <AiFillLinkedin size={25} />
             </a>
           </li>
