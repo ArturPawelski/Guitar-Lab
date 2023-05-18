@@ -6,6 +6,8 @@ GuitarLab is a modern website that focuses on design and an intuitive user inter
 
 ## Live preview 📲
 
+https://guitar-lab.netlify.app/
+
 ## Tech stack 🖥️
 
 -React
@@ -22,8 +24,8 @@ GuitarLab is a modern website that focuses on design and an intuitive user inter
 
 ```
 - git clone https://github.com/ArturPawelski/Guitar-Lab
-- cd
-- npm install
+- cd Guitar-Lab
+- npm install --legacy-peer-deps
 - npm start
 ```
 
