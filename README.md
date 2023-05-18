@@ -21,7 +21,7 @@ GuitarLab is a modern website that focuses on design and an intuitive user inter
 ## Installation 💾
 
 ```
-- git clone
+- git clone https://github.com/ArturPawelski/Guitar-Lab
 - cd
 - npm install
 - npm start
