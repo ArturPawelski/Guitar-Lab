@@ -2,6 +2,8 @@
 
 ## Description 📝
 
+**Note:** This is an older project focused on looks, animations, and responsiveness. It might not show all my current skills but highlights how I used to blend design with functionality.
+
 GuitarLab is a modern website that focuses on design and an intuitive user interface. This project showcases an example page for a company specializing in guitar sales.
 
 ## Live preview 📲
